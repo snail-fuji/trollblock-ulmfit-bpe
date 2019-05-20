@@ -6,12 +6,14 @@ import numpy as np
 import sentencepiece as spm
 from ulmfit_bpe.model.config import *
 
-sp = spm.SentencePieceProcessor()
-sp.Load(VERSION_FOLDER + COMMENTS_BPE_PATH)
 
 class BPETokenizer(BaseTokenizer):
+    def __init__(self):
+        self.sp = spm.SentencePieceProcessor()
+        self.sp.Load(VERSION_FOLDER + COMMENTS_BPE_PATH)
+
     def tokenizer(self, text):
-        return sp.EncodeAsPieces(text)
+        return self.sp.EncodeAsPieces(text)
 
 def return_tokenizer(*args, **kwargs):
     return BPETokenizer(*args, **kwargs)

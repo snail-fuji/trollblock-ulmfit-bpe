@@ -8,7 +8,6 @@ setup(name='ulmfit_bpe',
       packages=[
             'ulmfit_bpe',
             'ulmfit_bpe/model',
-            'ulmfit_bpe/tests',
       ],
       install_requires=[
             'pandas==0.24.2',
