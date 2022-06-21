@@ -15,7 +15,7 @@ setup(name='ulmfit_bpe',
             'torch==1.1.0',
             'scikit-learn==0.20.3',
             'fastai==1.0.52',
-            'numpy==1.16.2',
+            'numpy==1.22.0',
             'sentencepiece==0.1.82'
       ],
       zip_safe=False)
