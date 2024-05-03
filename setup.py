@@ -11,7 +11,7 @@ setup(name='ulmfit_bpe',
       ],
       install_requires=[
             'pandas==0.24.2',
-            'tqdm==4.23.4',
+            'tqdm==4.66.3',
             'torch==1.1.0',
             'scikit-learn==0.20.3',
             'fastai==1.0.52',
