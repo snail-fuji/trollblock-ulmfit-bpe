@@ -13,7 +13,7 @@ setup(name='ulmfit_bpe',
             'pandas==0.24.2',
             'tqdm==4.23.4',
             'torch==1.1.0',
-            'scikit-learn==0.20.3',
+            'scikit-learn==1.5.0',
             'fastai==1.0.52',
             'numpy==1.16.2',
             'sentencepiece==0.1.82'
